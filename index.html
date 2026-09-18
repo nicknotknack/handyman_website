@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Handyman — услуги мастера на час</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js" defer></script>
+  <script src="js/hero-animation.js" defer></script>
   <script src="js/script.js" defer></script>
 </head>
 <body>
@@ -33,7 +35,29 @@
 
   <main>
     <section class="image-section container">
-      <img src="images/hero.png" alt="Мастер на час за работой" class="hero-image">
+      <div class="hero-canvas-wrapper">
+        <div id="hero-canvas"></div>
+        <img src="images/hero.png" alt="Мастер на час за работой" class="hero-image hero-fallback">
+        <p class="hero-flicker-text">РЕШУ ЛЮБОЙ ВОПРОС</p>
+      </div>
+    </section>
+
+    <section class="advantages container">
+      <h2>Наши преимущества</h2>
+      <div class="advantages-grid">
+        <div class="advantage-card">
+          <h3>Скорость</h3>
+          <p>Приезжаем в день заявки и решаем большинство задач за один визит, без лишних задержек.</p>
+        </div>
+        <div class="advantage-card">
+          <h3>Бесплатный выезд</h3>
+          <p>Мастер оценит объём работы и назовёт стоимость на месте — выезд ничего не будет вам стоить.</p>
+        </div>
+        <div class="advantage-card">
+          <h3>Гарантия результата</h3>
+          <p>Если что-то пойдёт не так, переделаем бесплатно — мы уверены в качестве своей работы.</p>
+        </div>
+      </div>
     </section>
 
     <section id="contacts" class="contacts container">
