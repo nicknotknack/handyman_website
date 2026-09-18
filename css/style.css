@@ -139,6 +139,32 @@ body {
   white-space: nowrap;
 }
 
+.advantages {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.advantages h2 {
+  margin-bottom: 24px;
+}
+
+.advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.advantage-card {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  padding: 24px 20px;
+}
+
+.advantage-card h3 {
+  margin-bottom: 12px;
+  color: #2b4d3f;
+}
+
 .contacts {
   padding: 40px 20px;
   text-align: center;
