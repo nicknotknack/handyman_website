@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Handyman — услуги мастера на час</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js" defer></script>
+  <script src="js/hero-animation.js" defer></script>
   <script src="js/script.js" defer></script>
 </head>
 <body>
@@ -33,7 +35,11 @@
 
   <main>
     <section class="image-section container">
-      <img src="images/hero.png" alt="Мастер на час за работой" class="hero-image">
+      <div class="hero-canvas-wrapper">
+        <div id="hero-canvas"></div>
+        <img src="images/hero.png" alt="Мастер на час за работой" class="hero-image hero-fallback">
+        <p class="hero-flicker-text">РЕШУ ЛЮБОЙ ВОПРОС</p>
+      </div>
     </section>
 
     <section id="contacts" class="contacts container">
