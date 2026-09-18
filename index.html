@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Handyman — услуги мастера на час</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="container">
+      <h1>Услуги мастера на час</h1>
+      <p class="description">
+        Мелкий и не очень ремонт по дому: сантехника, электрика, сборка мебели
+        и другие бытовые задачи. Быстро, аккуратно, с гарантией.
+      </p>
+      <form class="request-form" id="request-form">
+        <input
+          type="tel"
+          name="phone"
+          class="phone-input"
+          placeholder="Ваш номер телефона"
+          pattern="^\+?[0-9\s\-\(\)]{7,20}$"
+          required
+        >
+        <button type="submit" class="btn">Перезвоните мне</button>
+      </form>
+      <p class="form-message" id="form-message" hidden></p>
+    </div>
+  </header>
+
+  <main>
+    <section class="image-section container">
+      <img src="images/hero.svg" alt="Мастер на час за работой" class="hero-image">
+    </section>
+
+    <section id="contacts" class="contacts container">
+      <h2>Связаться с нами</h2>
+      <p>Телефон: +7 (000) 000-00-00</p>
+      <p>Email: info@example.com</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Handyman. Все права защищены.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
